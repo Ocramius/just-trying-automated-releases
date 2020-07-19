@@ -17,7 +17,7 @@ jobs:
         uses: "actions/checkout@v2"
 
       - name: "Release"
-        uses: "Ocramius/automatic-releases@1.0.1"
+        uses: "Ocramius/automatic-releases@1.0.2"
         with:
           command-name: "laminas:automatic-releases:release"
         env:
@@ -27,7 +27,7 @@ jobs:
           "GIT_AUTHOR_EMAIL": ${{ secrets.GIT_AUTHOR_EMAIL }}
 
       - name: "Create Merge-Up Pull Request"
-        uses: "Ocramius/automatic-releases@1.0.1"
+        uses: "Ocramius/automatic-releases@1.0.2"
         with:
           command-name: "laminas:automatic-releases:create-merge-up-pull-request"
         env:
